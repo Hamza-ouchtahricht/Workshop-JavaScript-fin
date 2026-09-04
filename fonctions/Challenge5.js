@@ -1,19 +1,26 @@
-const prompt=require('prompt-sync')();
+let  n=parseInt(prompt("Entre un nombre entier positif : "));
 
-var n=parseInt(prompt("Entre a nomber:"));
+while(n<1){
 
-
-for(i=1;i<=n;i++);{
-	let j=1;
-
-	function fac(i,j){
-		return j=j*i;
-	}
-
-
-
+         n=parseInt(prompt("Entre un nomber entier positif : "));
 }
 
-let result=
+function factorial(n){
+
+        let i =1;
+
+        let j=1;
 
 
+        while(i<=n){
+                j=j*i;
+
+                i++;
+        }
+
+        return j;
+}
+
+let result=factorial(n);
+
+console.log(`${n}!= ${result}`);
