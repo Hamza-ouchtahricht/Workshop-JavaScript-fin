@@ -1,16 +1,21 @@
 const prompt=require('prompt-sync')();
 
-let n=prompt("entre a text: ");
+let n=prompt("Entre a text: ");
 
-function supprime_space(n){
-       let x="";
-        for(i of n){
-                if(i!= " "){
-                        console.log(i)
-                }
-        }
+
+function supp_espaces(n){
+	let x="";
+
+	for(i of n){
+		if(i!=" "){
+
+			x=x+i;
+		}
+
+	} 
+
+console.log(x);
 }
 
-supprime_space(n);
-
+supp_espaces(n);
 
